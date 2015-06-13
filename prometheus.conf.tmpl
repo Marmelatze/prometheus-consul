@@ -27,7 +27,7 @@ job: {
   }
 }
 
-{{range service "cadvisor:8080"}}
+{{range service "docker-controller:4041"}}
 job: {
   name: "cadvisor-{{.Node}}"
   scrape_interval: "5s"
